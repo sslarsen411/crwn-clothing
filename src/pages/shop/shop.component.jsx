@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import SHOP_DATA from './shop.data.js'
 import CollectionPreview from '../../components/collection-preview/collecttion-preview.component'
 
