@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-import SHOP_DATA from './shop.data.js'
+import SHOP_DATA from '../../data/shop.data'
 import CollectionPreview from '../../components/collection-preview/collecttion-preview.component'
 
 class ShopPage extends React.Component {
