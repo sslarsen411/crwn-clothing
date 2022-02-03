@@ -22,3 +22,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lesson-2final.zip
+src/pages/shop/shop.data.js

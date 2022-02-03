@@ -6,12 +6,7 @@ import {
 } from 'react-router-dom'
 import './App.css'
 import HomePage from './pages/homepage/homepage.component'
-
-const HatsPage = () => (
-  <div>
-    <h1>HATS HATS HATS!</h1>
-  </div>
-)
+import ShopPage from './pages/shop/shop.component.jsx'
 
 function NoMatch () {
   return (
@@ -29,7 +24,7 @@ function App () {
   // Different than video 80
     <Routes>
       <Route exact path='/' element={<HomePage />} />
-      <Route path='/hats' element={<HatsPage />} />
+      <Route path='/shop' element={<ShopPage />} />
       <Route path='*' element={<NoMatch />} />
     </Routes>
   )
