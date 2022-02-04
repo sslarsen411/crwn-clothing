@@ -23,3 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 lesson-2final.zip
 src/pages/shop/shop.data.js
+src/assets/Blond-jeans.jpg
+src/assets/sideboob.jpg
+.eslintrc.json
+src/assets/jeans.jpg
+src/assets/underboob.jpg

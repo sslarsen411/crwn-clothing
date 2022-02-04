@@ -19,6 +19,9 @@ const Header = () => {
         <Link className='option' to='/contact'>
           Contact
         </Link>
+        <Link className='option' to='/signin'>
+          Sign In
+        </Link>
         <a className='option' href='https://www.mojoimpact.com' target='_blank' rel='noreferrer'>Mojo Impact</a>
       </div>
     </div>

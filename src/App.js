@@ -6,9 +6,11 @@ import {
 } from 'react-router-dom'
 import './App.css'
 
-import Header from './components/header/header.component.jsx'
+import Header from './components/header/header.component'
 import HomePage from './pages/homepage/homepage.component'
-import ShopPage from './pages/shop/shop.component.jsx'
+import ShopPage from './pages/shop/shop.component'
+import SignInSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up.component'
+import { auth } from './firebase/firebase.utils'
 
 function NoMatch () {
   return (
@@ -21,17 +23,44 @@ function NoMatch () {
   )
 }
 
-function App () {
-  return (
-    <div>
-      <Header />
-      <Routes>
-        <Route exact path='/' element={<HomePage />} />
-        <Route path='/shop' element={<ShopPage />} />
-        <Route path='*' element={<NoMatch />} />
-      </Routes>
-    </div>
-  )
+class App extends React.Component {
+  constructor () {
+    super()
+
+    this.state = {
+      currentUser: null
+    }
+  }
+ // unsubscribeFromAuth = null 
+
+  /* REACT LIFECYCLE METHODS */
+  unsubscribeFromAuth = null
+
+  componentDidMount() {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
+      this.setState({ currentUser: user });
+
+      console.log(user);
+    });
+  }
+  
+  componentWillUnmount() {
+    this.unsubscribeFromAuth();
+  }
+
+  render () {
+    return (
+      <div>
+        <Header />
+        <Routes>
+          <Route exact path='/' element={<HomePage />} />
+          <Route path='/shop' element={<ShopPage />} />
+          <Route path='/signin' element={<SignInSignUpPage />} />
+          <Route path='*' element={<NoMatch />} />
+        </Routes>
+      </div>
+    )
+  }
 }
 
 export default App
