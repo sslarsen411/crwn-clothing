@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { auth } from '../../firebase/firebase.utils'
+
 import './header.styles.scss'
 import { ReactComponent as Logo } from '../../assets/crown.svg'
 
-const Header = () => {
+const Header = ({ currentUser }) => {
   return (
     <div className='header'>
       <Link to='/' className='logo-container'>
@@ -17,11 +19,24 @@ const Header = () => {
           shop
         </Link>
         <Link className='option' to='/contact'>
-          Contact
+          contact
         </Link>
-        <Link className='option' to='/signin'>
-          Sign In
-        </Link>
+        {currentUser
+          ? (
+            <div
+              className='option' onClick={() => auth.signOut()
+                .then(() => {
+                  window.location.reload()
+                })}
+            >
+              sign out
+            </div>
+            )
+          : (
+            <Link className='option' to='/signin'>
+              sign in
+            </Link>
+            )}
         <a className='option' href='https://www.mojoimpact.com' target='_blank' rel='noreferrer'>Mojo Impact</a>
       </div>
     </div>
