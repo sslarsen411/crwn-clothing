@@ -3,16 +3,18 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 2.5rem;
 
   & a {
     text-decoration: none;
     color: black;    
   }
+  & h1{font-size: 4rem;}
   .logo-container {
     height: 100%;
     width: 7rem;
-    padding: 2.5rem;
+    padding: 1.5rem 2.5rem;
   }
 
   .options {
@@ -27,6 +29,13 @@
 
     .option {
       padding: 1rem 1.5rem;
+      transition: all .2s;
+
+      &:hover{
+        color: #E74C3C;
+        // box-shadow: 0 1rem 2rem rgb(0 0 0 / 40%);
+        transform: translateY(-3px);
+      }
     }
   }
 }
