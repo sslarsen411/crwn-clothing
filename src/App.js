@@ -2,7 +2,8 @@ import React from 'react'
 import {
   Routes,
   Route,
-  Link
+  Link,
+  Navigate
 } from 'react-router-dom'
 import { connect } from 'react-redux';
 import './App.css'
@@ -54,9 +55,10 @@ class App extends React.Component {
       <div>
         <Header/>
         <Routes>
-          <Route exact path='/' element={<HomePage />} />
+          <Route path='/' element={<HomePage />} />
           <Route path='/shop' element={<ShopPage />} />
-          <Route path='/signin' element={<SignInSignUpPage />} />
+          {/* v6 Redirect */}
+          <Route path="/signin" element={this.props.currentUser ? <Navigate to="/"/> : <SignInSignUpPage />} /> 
           <Route path='*' element={<NoMatch />} />
         </Routes>
       </div>
@@ -64,11 +66,15 @@ class App extends React.Component {
   }
 }
 
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser
+})
+
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 })
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(App)
