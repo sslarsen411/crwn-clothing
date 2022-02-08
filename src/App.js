@@ -9,6 +9,7 @@ import { connect } from 'react-redux';
 import './App.css'
 
 import Header from './components/header/header.component'
+import Footer from './components/footer/footer.component'
 import HomePage from './pages/homepage/homepage.component'
 import ShopPage from './pages/shop/shop.component'
 import SignInSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up.component'
@@ -61,6 +62,7 @@ class App extends React.Component {
           <Route path="/signin" element={this.props.currentUser ? <Navigate to="/"/> : <SignInSignUpPage />} /> 
           <Route path='*' element={<NoMatch />} />
         </Routes>
+        <Footer />
       </div>
     )
   }

@@ -1,0 +1,50 @@
+.footer {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+
+  & a {
+    text-decoration: none;
+    color: black;    
+  }
+  & span{font-size: 4rem;}
+  .logo-container {
+    height: 100%;
+    width: 7rem;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    .option {
+      padding: 1rem 1.5rem;
+      transition: all .2s;
+
+      &:hover{
+        color: #E74C3C;
+        // box-shadow: 0 1rem 2rem rgb(0 0 0 / 40%);
+        transform: translateY(-3px);
+      }
+    }
+  }
+}
+.copyright{
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  & a {
+    text-decoration: none;
+    color: black;    
+  }
+}
