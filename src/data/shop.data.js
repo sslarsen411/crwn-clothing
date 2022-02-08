@@ -1,3 +1,4 @@
+import imgFiles from './shop.images'
 const SHOP_DATA = [
   {
     id: 1,
@@ -7,55 +8,55 @@ const SHOP_DATA = [
       {
         id: 1,
         name: 'Brown Brim',
-        imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+        imageUrl: imgFiles['brown-brim'],
         price: 25
       },
       {
         id: 2,
         name: 'Blue Beanie',
-        imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
+        imageUrl: imgFiles.blueBeanie,
         price: 18
       },
       {
         id: 3,
-        name: 'Brown Cowboy',
-        imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
+        name: 'Straw Cowboy',
+        imageUrl: imgFiles.cowboyHat,
         price: 35
       },
       {
         id: 4,
         name: 'Grey Brim',
-        imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
+        imageUrl: imgFiles['grey-brim'],
         price: 25
       },
       {
         id: 5,
         name: 'Green Beanie',
-        imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
+        imageUrl: imgFiles['green-beanie'],
         price: 18
       },
       {
         id: 6,
         name: 'Palm Tree Cap',
-        imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
+        imageUrl: imgFiles['palm-tree-cap'],
         price: 14
       },
       {
         id: 7,
         name: 'Red Beanie',
-        imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
+        imageUrl: imgFiles['red-beanie'],
         price: 18
       },
       {
         id: 8,
         name: 'Wolf Cap',
-        imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
+        imageUrl: imgFiles['wolf-cap'],
         price: 14
       },
       {
         id: 9,
         name: 'Blue Snapback',
-        imageUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
+        imageUrl: imgFiles['blue-snapback'],
         price: 16
       }
     ]
@@ -140,9 +141,9 @@ const SHOP_DATA = [
       },
       {
         id: 21,
-        name: 'Brown Shearling',
-        imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
-        price: 165
+        name: 'Denim Vest',
+        imageUrl: imgFiles.denimVest,
+        price: 65
       },
       {
         id: 22,
@@ -159,14 +160,14 @@ const SHOP_DATA = [
     items: [
       {
         id: 23,
-        name: 'Blue Tanktop',
-        imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
+        name: 'Purple Top',
+        imageUrl: imgFiles.skimpy,
         price: 25
       },
       {
         id: 24,
-        name: 'Floral Blouse',
-        imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
+        name: 'Overalls',
+        imageUrl: imgFiles.overalls,
         price: 20
       },
       {
