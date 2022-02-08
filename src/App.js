@@ -15,6 +15,7 @@ import ShopPage from './pages/shop/shop.component'
 import SignInSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up.component'
 import { auth, createUserProfileDocument} from './firebase/firebase.utils'
 import { setCurrentUser } from './redux/user/user.actions'
+//import getYear from './functions/functions';'./functions/functions'
 
 function NoMatch () {
   return (
@@ -26,6 +27,10 @@ function NoMatch () {
     </div>
   )
 }
+
+const currentDate = new Date()
+const currYr =  currentDate.getFullYear()
+
 class App extends React.Component {
   unsubscribeFromAuth = null
 
@@ -45,6 +50,8 @@ class App extends React.Component {
       }
       setCurrentUser(userAuth);
     })
+  // Set date in footer
+    document.querySelector("#currYr").innerHTML = currYr
   } 
   
   componentWillUnmount() {

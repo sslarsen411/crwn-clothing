@@ -40,7 +40,6 @@ const Header = ({ currentUser, hidden }) => {
               sign in
             </Link>
             )}
-        <a className='option' href='https://www.mojoimpact.com' target='_blank' rel='noreferrer'>Mojo Impact</a>
         <CartIcon />
       </div>
       {hidden ? null : <CartDropdown />}

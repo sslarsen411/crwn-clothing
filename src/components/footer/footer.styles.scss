@@ -45,6 +45,11 @@
   justify-content: center;
   & a {
     text-decoration: none;
-    color: black;    
+    color: black; 
+    &:hover{
+      color: #E74C3C;
+      // box-shadow: 0 1rem 2rem rgb(0 0 0 / 40%);
+      transform: translateY(-3px);
+    }
   }
 }
