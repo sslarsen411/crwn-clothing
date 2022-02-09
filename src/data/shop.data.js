@@ -1,4 +1,5 @@
 import imgFiles from './shop.images'
+
 const SHOP_DATA = [
   {
     id: 1,
@@ -8,7 +9,7 @@ const SHOP_DATA = [
       {
         id: 1,
         name: 'Brown Brim',
-        imageUrl: imgFiles['brown-brim'],
+        imageUrl: imgFiles.brownBrim,
         price: 25
       },
       {
@@ -19,38 +20,38 @@ const SHOP_DATA = [
       },
       {
         id: 3,
-        name: 'Straw Cowboy',
-        imageUrl: imgFiles.cowboyHat,
+        name: 'Brown Cowboy',
+        imageUrl: imgFiles.brownCowboy,
         price: 35
       },
       {
         id: 4,
         name: 'Grey Brim',
-        imageUrl: imgFiles['grey-brim'],
+        imageUrl: imgFiles.greyBrim,
         price: 25
       },
       {
         id: 5,
         name: 'Green Beanie',
-        imageUrl: imgFiles['green-beanie'],
+        imageUrl: imgFiles.greenBeanie,
         price: 18
       },
       {
         id: 6,
         name: 'Palm Tree Cap',
-        imageUrl: imgFiles['palm-tree-cap'],
+        imageUrl: imgFiles.palmTreeCap,
         price: 14
       },
       {
         id: 7,
         name: 'Red Beanie',
-        imageUrl: imgFiles['red-beanie'],
+        imageUrl: imgFiles.redBeanie,
         price: 18
       },
       {
         id: 8,
         name: 'Wolf Cap',
-        imageUrl: imgFiles['wolf-cap'],
+        imageUrl: imgFiles.wolfCap,
         price: 14
       },
       {
@@ -124,19 +125,19 @@ const SHOP_DATA = [
       {
         id: 18,
         name: 'Black Jean Shearling',
-        imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+        imageUrl: imgFiles.blackShearling,
         price: 125
       },
       {
         id: 19,
         name: 'Blue Jean Jacket',
-        imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+        imageUrl: imgFiles.blueJeanJacket,
         price: 90
       },
       {
         id: 20,
         name: 'Grey Jean Jacket',
-        imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+        imageUrl: imgFiles.greyJeanJacket,
         price: 90
       },
       {
@@ -148,7 +149,7 @@ const SHOP_DATA = [
       {
         id: 22,
         name: 'Tan Trench',
-        imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
+        imageUrl: imgFiles.brownTrench,
         price: 185
       }
     ]
@@ -245,6 +246,6 @@ const SHOP_DATA = [
       }
     ]
   }
-];
+]
 
-export default SHOP_DATA;
+export default SHOP_DATA

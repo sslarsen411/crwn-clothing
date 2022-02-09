@@ -5,7 +5,9 @@ import {
   Link,
   Navigate
 } from 'react-router-dom'
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
+import { createStructuredSelector } from 'reselect'
+
 import './App.css'
 
 import Header from './components/header/header.component'
@@ -15,6 +17,7 @@ import ShopPage from './pages/shop/shop.component'
 import SignInSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up.component'
 import { auth, createUserProfileDocument} from './firebase/firebase.utils'
 import { setCurrentUser } from './redux/user/user.actions'
+import { selectCurrentUser } from './redux/user/user.selectors'
 //import getYear from './functions/functions';'./functions/functions'
 
 function NoMatch () {
@@ -66,7 +69,10 @@ class App extends React.Component {
           <Route path='/' element={<HomePage />} />
           <Route path='/shop' element={<ShopPage />} />
           {/* v6 Redirect */}
-          <Route path="/signin" element={this.props.currentUser ? <Navigate to="/"/> : <SignInSignUpPage />} /> 
+          <Route 
+          path="/signin" element={this.props.currentUser ? 
+          <Navigate to="/"/> 
+          : <SignInSignUpPage />} /> 
           <Route path='*' element={<NoMatch />} />
         </Routes>
         <Footer />
@@ -75,8 +81,8 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser
 })
 
 const mapDispatchToProps = dispatch => ({

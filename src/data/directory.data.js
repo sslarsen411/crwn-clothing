@@ -1,8 +1,8 @@
 import hat from '../assets/hats.png'
 import jacket from '../assets/jackets.png'
 import shoes from '../assets/sneakers.png'
-import womens from '../assets/underboob.jpg'
-import mens from '../assets/jeans.jpg'
+import womens from '../assets/womens.png'
+import mens from '../assets/men.png'
 
 const DIRECTORY_DATA = [{
   title: 'hats',
