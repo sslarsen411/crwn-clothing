@@ -7,7 +7,6 @@ import CollectionPage from '../collection/collection.component'
 import './shop.styles.scss'
 const ShopPage = () => (
   <div className='shop-page'>
-    <h1>Shop Our Fine Selections</h1>
     <Routes>
       <Route path='/' element={<CollectionsOverview />} />
       <Route exact path=':collectionId' element={<CollectionPage />} />

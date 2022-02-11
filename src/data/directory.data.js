@@ -1,6 +1,6 @@
 import hat from '../assets/hats.png'
 import jacket from '../assets/jackets.png'
-import shoes from '../assets/sneakers.png'
+import sneakers from '../assets/sneakers.png'
 import womens from '../assets/underboob.jpg'
 import mens from '../assets/jeans.jpg'
 
@@ -9,31 +9,31 @@ const DIRECTORY_DATA = [{
   imageUrl: hat,
   size: '',
   id: 1,
-  linkUrl: 'hats'
+  linkUrl: 'shop/hats'
 }, {
   title: 'jackets',
   imageUrl: jacket,
   size: '',
   id: 2,
-  linkUrl: ''
+  linkUrl: 'shop/jackets'
 }, {
-  title: 'shoes',
-  imageUrl: shoes,
+  title: 'Sneakers',
+  imageUrl: sneakers,
   size: '',
   id: 3,
-  linkUrl: ''
+  linkUrl: 'shop/sneakers'
 }, {
   title: 'womens',
   imageUrl: womens,
   size: 'large',
   id: 4,
-  linkUrl: ''
+  linkUrl: 'shop/womens'
 }, {
   title: 'mens',
   imageUrl: mens,
   size: 'large',
   id: 5,
-  linkUrl: ''
+  linkUrl: 'shop/mens'
 }
 ]
 

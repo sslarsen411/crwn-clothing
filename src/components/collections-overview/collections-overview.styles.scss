@@ -1,4 +1,10 @@
 .collections-overview {
   display: flex;
   flex-direction: column;
+
+  & .page-title{
+    margin: 1rem auto;
+    font-size: 4rem;
+    text-align: center;
+  }
 }
