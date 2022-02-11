@@ -32,7 +32,7 @@ function NoMatch () {
 }
 
 const currentDate = new Date()
-const currYr =  currentDate.getFullYear()
+ 
 class App extends React.Component {
   unsubscribeFromAuth = null
 
@@ -53,7 +53,7 @@ class App extends React.Component {
       setCurrentUser(userAuth);
     })
   // Set date in footer
-    document.querySelector("#currYr").innerHTML = currYr
+    document.querySelector("#currYr").innerHTML = currentDate.getFullYear()
   } 
   
   componentWillUnmount() {

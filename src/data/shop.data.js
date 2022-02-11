@@ -59,6 +59,12 @@ const SHOP_DATA = {
         name: 'Blue Snapback',
         imageUrl: imgFiles.blueSnapback,
         price: 16
+      },
+      {
+        id: 37,
+        name: 'Straw Cowboy',
+        imageUrl: imgFiles.cowboyHat,
+        price: 22
       }
     ]
   },
@@ -161,8 +167,8 @@ const SHOP_DATA = {
     items: [
       {
         id: 23,
-        name: 'Purple Top',
-        imageUrl: imgFiles.skimpy,
+        name: 'Blue Tank Top',
+        imageUrl: imgFiles.blueTank,
         price: 25
       },
       {
@@ -200,6 +206,12 @@ const SHOP_DATA = {
         name: 'White Blouse',
         imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
         price: 20
+      },
+      {
+        id: 36,
+        name: 'Purple Bikini Top',
+        imageUrl: imgFiles.skimpy,
+        price: 200
       }
     ]
   },

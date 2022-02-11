@@ -8,17 +8,17 @@ export const selectCollections = createSelector(
   shop => shop.collections
 )
 
-export const selectCollectionsForPreview = createSelector(
-  [selectCollections],
-  collections => Object.keys(collections).map(key => collections[key])
-)
-
-/* Converted shop.data from array to object */
+/* Converted shop.data from array to object to optimize search */
 export const selectCollection = memoize((collectionUrlParam) =>
   createSelector(
     [selectCollections],
     (collections) => collections[collectionUrlParam]
   )
+)
+
+export const selectCollectionsForPreview = createSelector(
+  [selectCollections],
+  collections => Object.keys(collections).map(key => collections[key])
 )
 
 export const selectIsCollectionFetching = createSelector(
