@@ -57,7 +57,7 @@ const SHOP_DATA = [
       {
         id: 9,
         name: 'Blue Snapback',
-        imageUrl: imgFiles['blue-snapback'],
+        imageUrl: imgFiles.blueSnapback,
         price: 16
       }
     ]
