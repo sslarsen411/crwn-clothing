@@ -2,7 +2,6 @@ import blueBeanie from '../assets/shop-img/hats/blue-beanie.png'
 import blueSnapback from '../assets/shop-img/hats/blue-snapback.png'
 import brownBrim from '../assets/shop-img/hats/brown-brim.png'
 import brownCowboy from '../assets/shop-img/hats/brown-cowboy.png'
-import cowboyHat from '../assets/shop-img/hats/straw-cowboy.png'
 import greenBeanie from '../assets/shop-img/hats/green-beanie.png'
 import greyBrim from '../assets/shop-img/hats/grey-brim.png'
 import palmTreeCap from '../assets/shop-img/hats/palm-tree-cap.png'
@@ -42,7 +41,6 @@ const imgFiles = {
   blueSnapback: blueSnapback,
   brownBrim: brownBrim,
   brownCowboy: brownCowboy,
-  cowboyHat: cowboyHat,
   greenBeanie: greenBeanie,
   greyBrim: greyBrim,
   palmTreeCap: palmTreeCap,

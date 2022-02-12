@@ -4,16 +4,18 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
 import { auth } from '../../firebase/firebase.utils'
+import storage from 'redux-persist/lib/storage'
 import CartIcon from '../cart-icon/cart-icon.component'
 import CartDropdown from '../cart-dropdown/cart-dropdown.component'
-import { selectCartHidden } from '../../redux/cart/cart.selectors'
+import { selectCartHidden , selectCartItems } from '../../redux/cart/cart.selectors'
 import { selectCurrentUser } from '../../redux/user/user.selectors'
 
 import { ReactComponent as Logo } from '../../assets/crown.svg'
 
 import './header.styles.scss'
 
-const Header = ({ currentUser, hidden }) => {
+const Header = ({ currentUser, hidden, cartItems }) => {
+  console.log(cartItems)
   return (
     <div className='header'>
       <Link to='/' className='logo-container'>
@@ -35,6 +37,8 @@ const Header = ({ currentUser, hidden }) => {
             <div
               className='option' onClick={() => auth.signOut()
                 .then(() => {
+                  console.log('signing out...')
+                  storage.removeItem('persist:root')
                   window.location.reload()
                 })}
             >
@@ -55,7 +59,8 @@ const Header = ({ currentUser, hidden }) => {
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
-  hidden: selectCartHidden
+  hidden: selectCartHidden,
+  cartItems: selectCartItems
 })
 
 export default connect(mapStateToProps)(Header)
