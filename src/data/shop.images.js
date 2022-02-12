@@ -24,7 +24,6 @@ import yeezy from '../assets/shop-img/sneakers/yeezy.png'
 import blueTank from '../assets/shop-img/womens/blue-tank.png'
 import floralBlouse from '../assets/shop-img/womens/floral-blouse.png'
 import floralSkirt from '../assets/shop-img/womens/floral-skirt.png'
-import overalls from '../assets/shop-img/womens/overalls.jpg'
 import redPolkaDotDress from '../assets/shop-img/womens/red-polka-dot-dress.png'
 import stripedSweater from '../assets/shop-img/womens/striped-sweater.png'
 import whiteVest from '../assets/shop-img/womens/white-vest.png'
@@ -63,7 +62,6 @@ const imgFiles = {
   blueTank: blueTank,
   floralBlouse: floralBlouse,
   floralSkirt: floralSkirt,
-  overalls: overalls,
   redPolkaDotDress: redPolkaDotDress,
   stripedSweater: stripedSweater,
   whiteVest: whiteVest,
