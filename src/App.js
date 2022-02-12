@@ -17,6 +17,7 @@ import HomePage from './pages/homepage/homepage.component'
 import ShopPage from './pages/shop/shop.component'
 import CheckoutPage from './pages/checkout/checkout.component'
 import SignInSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up.component'
+import PolicyPage from './pages/policy/policy-component'
 
 import './App.css'
 
@@ -73,6 +74,7 @@ class App extends React.Component {
           path="/signin" element={this.props.currentUser ? 
           <Navigate to="/"/> 
           : <SignInSignUpPage />} /> 
+          <Route path='/policy/:policyId' element={<PolicyPage />} />
           <Route path='*' element={<NoMatch />} />
         </Routes>
         <Footer />

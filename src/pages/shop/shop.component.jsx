@@ -9,7 +9,7 @@ const ShopPage = () => (
   <div className='shop-page'>
     <Routes>
       <Route path='/' element={<CollectionsOverview />} />
-      <Route exact path=':collectionId' element={<CollectionPage />} />
+      <Route path=':collectionId' element={<CollectionPage />} />
     </Routes>
   </div>
 )

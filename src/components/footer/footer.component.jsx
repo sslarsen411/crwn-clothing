@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 // import { connect } from 'react-redux'
 // import { auth } from '../../firebase/firebase.utils'
 import './footer.styles.scss'
@@ -14,13 +15,13 @@ const Footer = () => {
         <Logo className='logo' />
         <span>Crown Clothing LTD</span>
         <div className='options'>
-          <Link className='option' to='/cookies'>
+          <Link className='option' to='policy/cookie'>
             cookies
           </Link>
-          <Link className='option' to='/privacy'>
+          <Link className='option' to='policy/privacy'>
             privacy
           </Link>
-          <Link className='option' to='/terms'>
+          <Link className='option' to='policy/terms'>
             terms
           </Link>
         </div>
