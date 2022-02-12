@@ -59,12 +59,6 @@ const SHOP_DATA = {
         name: 'Blue Snapback',
         imageUrl: imgFiles.blueSnapback,
         price: 16
-      },
-      {
-        id: 37,
-        name: 'Straw Cowboy',
-        imageUrl: imgFiles.cowboyHat,
-        price: 22
       }
     ]
   },
@@ -76,49 +70,49 @@ const SHOP_DATA = {
       {
         id: 10,
         name: 'Adidas NMD',
-        imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
+        imageUrl: imgFiles.adidasNmd,
         price: 220
       },
       {
         id: 11,
         name: 'Adidas Yeezy',
-        imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
+        imageUrl: imgFiles.yeezy,
         price: 280
       },
       {
         id: 12,
         name: 'Black Converse',
-        imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
+        imageUrl: imgFiles.blackConverse,
         price: 110
       },
       {
         id: 13,
         name: 'Nike White AirForce',
-        imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
+        imageUrl: imgFiles.whiteNikeHighTops,
         price: 160
       },
       {
         id: 14,
         name: 'Nike Red High Tops',
-        imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
+        imageUrl: imgFiles.nikesRed,
         price: 160
       },
       {
         id: 15,
         name: 'Nike Brown High Tops',
-        imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
+        imageUrl: imgFiles.nikeBrown,
         price: 160
       },
       {
         id: 16,
         name: 'Air Jordan Limited',
-        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        imageUrl: imgFiles.nikeFunky,
         price: 190
       },
       {
         id: 17,
         name: 'Timberlands',
-        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        imageUrl: imgFiles.timberlands,
         price: 200
       }
     ]
@@ -148,9 +142,9 @@ const SHOP_DATA = {
       },
       {
         id: 21,
-        name: 'Denim Vest',
-        imageUrl: imgFiles.denimVest,
-        price: 65
+        name: 'Brown Shearling',
+        imageUrl: imgFiles.brownShearling,
+        price: 165
       },
       {
         id: 22,
@@ -173,45 +167,39 @@ const SHOP_DATA = {
       },
       {
         id: 24,
-        name: 'Overalls',
-        imageUrl: imgFiles.overalls,
+        name: 'Floral Blouse',
+        imageUrl: imgFiles.floralBlouse,
         price: 20
       },
       {
         id: 25,
         name: 'Floral Dress',
-        imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
+        imageUrl: imgFiles.floralSkirt,
         price: 80
       },
       {
         id: 26,
         name: 'Red Dots Dress',
-        imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
+        imageUrl: imgFiles.redPolkaDotDress,
         price: 80
       },
       {
         id: 27,
         name: 'Striped Sweater',
-        imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
+        imageUrl: imgFiles.stripedSweater,
         price: 45
       },
       {
         id: 28,
         name: 'Yellow Track Suit',
-        imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
+        imageUrl: imgFiles.yellowTrackSuit,
         price: 135
       },
       {
         id: 29,
         name: 'White Blouse',
-        imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
+        imageUrl: imgFiles.whiteVest,
         price: 20
-      },
-      {
-        id: 36,
-        name: 'Purple Bikini Top',
-        imageUrl: imgFiles.skimpy,
-        price: 200
       }
     ]
   },
@@ -223,37 +211,37 @@ const SHOP_DATA = {
       {
         id: 30,
         name: 'Camo Down Vest',
-        imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
+        imageUrl: imgFiles.camoVest,
         price: 325
       },
       {
         id: 31,
         name: 'Floral T-shirt',
-        imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
+        imageUrl: imgFiles.floralShirt,
         price: 20
       },
       {
         id: 32,
         name: 'Black & White Longsleeve',
-        imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
+        imageUrl: imgFiles.longSleeve,
         price: 25
       },
       {
         id: 33,
         name: 'Pink T-shirt',
-        imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
+        imageUrl: imgFiles.pinkShirt,
         price: 25
       },
       {
         id: 34,
         name: 'Jean Long Sleeve',
-        imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
+        imageUrl: imgFiles.rollUpJeanShirt,
         price: 40
       },
       {
         id: 35,
         name: 'Burgundy T-shirt',
-        imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
+        imageUrl: imgFiles.polkaDotShirt,
         price: 25
       }
     ]
