@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router'
+
 import { connect } from 'react-redux'
-import CollectionItem from '../../components/collection-item/collection-item.component'
 import { selectCollection } from '../../redux/shop/shop.selectors'
 import { changeShopParams } from '../../redux/shop/shop.actions'
+
+import CollectionItem from '../../components/collection-item/collection-item.component'
 
 import './collection.styles.scss'
 

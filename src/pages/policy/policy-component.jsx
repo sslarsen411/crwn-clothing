@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router'
+
 import axios from 'axios'
 
 import './policy-component.styles.scss'
@@ -20,6 +21,7 @@ const PolicyPage = () => {
   }
 
   fetchData()
+
   return (
     <div className='policy-page'>
       <div id='policy' className='policy-text' />

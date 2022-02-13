@@ -5,6 +5,7 @@ import CollectionsOverview from '../../components/collections-overview/collectio
 import CollectionPage from '../collection/collection.component'
 
 import './shop.styles.scss'
+
 const ShopPage = () => (
   <div className='shop-page'>
     <Routes>

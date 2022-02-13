@@ -5,11 +5,14 @@ import {
   Link,
   Navigate
 } from 'react-router-dom'
+
 import { connect } from 'react-redux'
-import { createStructuredSelector } from 'reselect'
-import { auth, createUserProfileDocument} from './firebase/firebase.utils'
 import { setCurrentUser } from './redux/user/user.actions'
 import { selectCurrentUser } from './redux/user/user.selectors'
+
+import { createStructuredSelector } from 'reselect'
+
+import { auth, createUserProfileDocument} from './firebase/firebase.utils'
 
 import Header from './components/header/header.component'
 import Footer from './components/footer/footer.component'
@@ -68,12 +71,11 @@ class App extends React.Component {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/shop/*' element={<ShopPage />} />
-          <Route path='/checkout' element={<CheckoutPage />} />
-          {/* v6 Redirect */}
+          <Route path='/checkout' element={<CheckoutPage />} />          
           <Route 
-          path="/signin" element={this.props.currentUser ? 
-          <Navigate to="/"/> 
-          : <SignInSignUpPage />} /> 
+            path="/signin" element={this.props.currentUser ? 
+            <Navigate to="/"/> // Cannot access SignInSignUpPage when signed in
+            : <SignInSignUpPage />} /> 
           <Route path='/policy/:policyId' element={<PolicyPage />} />
           <Route path='*' element={<NoMatch />} />
         </Routes>
