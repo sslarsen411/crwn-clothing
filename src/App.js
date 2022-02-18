@@ -12,7 +12,10 @@ import { selectCurrentUser } from './redux/user/user.selectors'
 
 import { createStructuredSelector } from 'reselect'
 
-import { auth, createUserProfileDocument} from './firebase/firebase.utils'
+import { auth, createUserProfileDocument, addCollectionAndDocuments} from './firebase/firebase.utils'
+/* DELETE ME - ONE-TIME CODE TO MOVE SHOP ITEMS TO fb */
+import { selectCollectionsForPreview } from './redux/shop/shop.selectors';
+
 
 import Header from './components/header/header.component'
 import Footer from './components/footer/footer.component'
@@ -41,7 +44,7 @@ class App extends React.Component {
   unsubscribeFromAuth = null
 
   componentDidMount() {
-    const { setCurrentUser } = this.props;
+    const { setCurrentUser, collectionsArray } = this.props;
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
@@ -54,7 +57,11 @@ class App extends React.Component {
           });
         });
       }
-      setCurrentUser(userAuth);
+      setCurrentUser(userAuth)
+      addCollectionAndDocuments(
+        'collections', 
+        collectionsArray.map(({title, items}) => ({ title, items }))
+      )
     })
   // Set date in footer
     document.querySelector("#currYr").innerHTML = currentDate.getFullYear()
@@ -86,7 +93,8 @@ class App extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
+  currentUser: selectCurrentUser,
+  collectionsArray: selectCollectionsForPreview
 })
 
 const mapDispatchToProps = dispatch => ({
